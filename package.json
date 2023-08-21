@@ -8,11 +8,13 @@
   "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0",
+    "commander": "^11.0.0",
     "diff": "^5.1.0",
     "typescript": "^5.1.6"
   },
   "devDependencies": {
     "@types/colors": "^1.2.1",
+    "@types/commander": "^2.12.2",
     "@types/diff": "^5.0.3",
     "@types/jest": "^29.5.3",
     "@types/node": "^20.5.1",

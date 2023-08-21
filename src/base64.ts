@@ -19,6 +19,10 @@ export class Base64Helper {
    * @returns The plain text string decoded from `str`.
    */
   static decodeString(str: string): string {
-    return atob(str);
+    try {
+      return atob(str);
+    } catch {
+      throw new Error(`Invalid Base64 string: ${str}`);
+    }
   }
 }
