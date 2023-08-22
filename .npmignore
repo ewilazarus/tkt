@@ -1,0 +1,15 @@
+// Typescript
+src
+
+// Dependencies
+node_modules
+
+// Config
+.eslintignore
+.eslintrc
+.gitignore
+.npmignore
+.prettierrc
+jest.config.js
+README.md
+tscofig.json
