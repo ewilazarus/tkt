@@ -1,5 +1,9 @@
+// Typs
+!**/*.d.ts
+
 // Typescript
 src/
+**/*.ts
 
 // Javascript
 !dist/
