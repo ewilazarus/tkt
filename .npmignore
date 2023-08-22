@@ -1,8 +1,11 @@
 // Typescript
-src
+src/
+
+// Javascript
+!dist/
 
 // Dependencies
-node_modules
+node_modules/
 
 // Config
 .eslintignore

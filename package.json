@@ -1,6 +1,6 @@
 {
   "name": "ubt",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A programmer's utility belt",
   "main": "src/index.ts",
   "repository": "git@github.com:ewilazarus/ubt.git",
