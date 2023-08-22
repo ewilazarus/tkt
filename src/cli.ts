@@ -3,7 +3,9 @@ import { Base64Helper } from './base64';
 import { JsonHelper } from './json';
 import { readFileSync } from 'fs';
 import { ConsoleDiffHelper } from './diff/console';
-import { VERSION } from './constants';
+
+// Version read from the package.json file.
+const version = process.env.npm_package_version || '0.1.0';
 
 /**
  * Helper function that reads a file and returns its contents as a string.
@@ -155,7 +157,7 @@ export const programFactory = () =>
   new Command()
     .name('ubt')
     .description("A programmer's utility belt")
-    .version(VERSION, '-v, --version', 'output the current version')
+    .version(version, '-v, --version', 'output the current version')
     .addCommand(base64SubCommandFactory())
     .addCommand(jsonSubCommandFactory())
     .addCommand(diffSubCommandFactory());
