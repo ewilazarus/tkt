@@ -1,2 +1,2 @@
-// The version of the `tkt` program
+// The version of the `ubt` program
 export const VERSION = '0.1.0';

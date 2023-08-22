@@ -153,8 +153,8 @@ const diffSubCommandFactory = () =>
  */
 export const programFactory = () =>
   new Command()
-    .name('tkt')
-    .description("A programmer's toolkit")
+    .name('ubt')
+    .description("A programmer's utility belt")
     .version(VERSION, '-v, --version', 'output the current version')
     .addCommand(base64SubCommandFactory())
     .addCommand(jsonSubCommandFactory())

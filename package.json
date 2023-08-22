@@ -1,9 +1,9 @@
 {
-  "name": "tkt",
+  "name": "ubt",
   "version": "0.1.0",
-  "description": "A programmer's toolkit",
+  "description": "A programmer's utility belt",
   "main": "src/index.ts",
-  "repository": "git@github.com:ewilazarus/tkt.git",
+  "repository": "git@github.com:ewilazarus/ubt.git",
   "author": "Gabriel Lima",
   "license": "MIT",
   "dependencies": {
@@ -35,6 +35,6 @@
     "lint": "eslint . --ext .ts --fix"
   },
   "bin": {
-    "tkt": "./dist/index.js"
+    "ubt": "./dist/index.js"
   }
 }

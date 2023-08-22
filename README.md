@@ -1,6 +1,6 @@
-# `tkt`
+# `ubt`
 
-This is intended to be a CLI toolkit to hold some programming goodies.
+A programmer's utility belt.
 
 ## Features
 
