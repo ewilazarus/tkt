@@ -5,7 +5,7 @@ import { readFileSync } from 'fs';
 import { ConsoleDiffHelper } from './diff/console';
 
 // Version read from the package.json file.
-const version = '0.1.6';
+const version = '0.1.7';
 
 /**
  * Helper function that reads a file and returns its contents as a string.
