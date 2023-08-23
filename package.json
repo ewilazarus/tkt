@@ -33,7 +33,10 @@
     "build": "tsc",
     "test": "jest",
     "fmt": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "lint": "eslint . --ext .ts --fix"
+    "lint": "eslint . --ext .ts --fix",
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
   },
   "bin": {
     "ubt": "./dist/index.js"
