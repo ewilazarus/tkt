@@ -1,15 +1,15 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "> Running pre-commit hooks ..."
+echo "> Running pre-commit hooks ...\n"
 
-echo "lint"
+echo "\n 1. lint"
 yarn lint
 
-echo "fmt"
+echo "\n2. fmt"
 yarn fmt
 
-echo "test"
+echo "\n3. test"
 yarn test
 
-echo "> DONE!"
+echo "\n\n> DONE!"
