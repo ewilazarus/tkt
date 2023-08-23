@@ -1,11 +1,10 @@
-// Typs
+// Types
 !**/*.d.ts
 
-// Typescript
-src/
+// Typescript source code
 **/*.ts
 
-// Javascript
+// Javascript source code (generated)
 !dist/
 
 // Dependencies
