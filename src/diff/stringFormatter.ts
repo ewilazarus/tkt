@@ -13,7 +13,7 @@ const colorsAdapter = {
  * @param colorizedChanges - A list of colorized changes.
  * @returns A list of strings with colors.
  */
-const consoleFormatter = (colorizedChanges: ColorizedChange[]) => {
+const stringFormatter = (colorizedChanges: ColorizedChange[]) => {
   return colorizedChanges.map(({ change, color }) => {
     const colorizer = colorsAdapter[color];
     return colorizer(change.value);
@@ -23,8 +23,8 @@ const consoleFormatter = (colorizedChanges: ColorizedChange[]) => {
 /**
  * A helper class for diffing strings when using the console.
  */
-export class ConsoleDiffHelper extends DiffHelper<string[]> {
+export class StringDiffHelper extends DiffHelper<string[]> {
   constructor() {
-    super(consoleFormatter);
+    super(stringFormatter);
   }
 }

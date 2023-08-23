@@ -2,10 +2,10 @@ import { Command, Option } from 'commander';
 import { Base64Helper } from './base64';
 import { JsonHelper } from './json';
 import { readFileSync } from 'fs';
-import { ConsoleDiffHelper } from './diff/console';
+import { StringDiffHelper } from './diff/stringFormatter';
 
 // Version read from the package.json file.
-const version = '0.1.9';
+const version = '0.1.10';
 
 /**
  * Helper function that reads a file and returns its contents as a string.
@@ -142,7 +142,7 @@ const diffSubCommandFactory = () =>
         console.error(`Failed to read 'right' file: ${e}`);
       }
 
-      const differ = new ConsoleDiffHelper();
+      const differ = new StringDiffHelper();
       const result = differ.diff(leftFileContent, rightFileContent);
 
       for (const line of result) {
