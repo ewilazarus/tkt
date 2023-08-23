@@ -3,13 +3,17 @@
 
 echo "> Running pre-commit hooks ...\n"
 
-echo "\n 1. lint"
+echo "\n1. build"
+rm -rf dist
+yarn build
+
+echo "\n2. lint"
 yarn lint
 
-echo "\n2. fmt"
+echo "\n3. fmt"
 yarn fmt
 
-echo "\n3. test"
+echo "\n4. test"
 yarn test
 
 echo "\n\n> DONE!"
