@@ -11,11 +11,11 @@
 node_modules/
 
 // Config
+.husky/
 .eslintignore
 .eslintrc
 .gitignore
 .npmignore
 .prettierrc
 jest.config.js
-README.md
-tscofig.json
+tsconfig.json
